@@ -1,0 +1,71 @@
+:root{
+    font-size: 16px;
+    box-sizing: border-box;
+    /*font-size: calc(0.5em + 1vw);*/
+    --blue-demon: #043F63;
+    --strong-blue: #04477A;
+    --sky-blue: #259CF4;
+    --powerade: #1DD0F8;
+    --mint: #5CEAD2;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Comfortaa', cursive;
+}
+/*----------NAVBAR--------------*/
+.nav_bar{
+    background-color: var(--blue-demon);
+    width: 177.567px;
+    height: 100vh;
+}
+
+.nav_bar__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_bar__photo{
+    background-image: url(images/HASH.jpg);
+    background-size: cover;
+    
+}
+
+.nav_bar__item{
+    align-self: auto;
+    font-size: 1.813em;
+    color: var(--powerade);
+    text-align: center;
+    background-color:inherit;
+    border: 5px dashed var(--powerade);
+}
+.nav_bar__item:hover{
+    color: var(--blue-demon);
+    background-color: var(--powerade);
+    border: 5px dashed var(--blue-demon);
+   
+}
+
+.nav_bar__item a{
+    display: block;
+    text-decoration: none;
+    padding: .4em;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+  }
+
+
+
+
+.nav_bar__item p{
+font-size: 0.798em;
+}
