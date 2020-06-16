@@ -18,8 +18,9 @@
 
 html{
     font-family: 'Comfortaa', cursive;
+    background-color: var(--blue-demon);
 }
-/*----------NAVBAR--------------*/
+/*------------NAVBAR--------------------------------------*/
 .nav_bar{
     background-color: var(--blue-demon);
     width: 177.567px;
@@ -79,10 +80,48 @@ html{
     margin-bottom: .3em;
 }
 
-a, a:visited, a:hover, a:active {
+.nav_bar__item a, .nav_bar__item a:visited,  .nav_bar__item a:hover, .nav_bar__item a:active {
     color: inherit;
   }
 
 .nav_bar__item p{
 font-size: 0.798em;
+}
+
+/*------------Infrastructure--------------------------------------*/
+.wrapper{
+    display: flex;
+}
+.main{
+    width: 73%;
+    background-color: var(--strong-blue);
+}
+/*------------SOCIAL NETWORKS--------------------------------------*/
+.social_networks{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    width: 72px;
+    /*border: red solid 1px; */
+}
+.social_networks__tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color:var(--powerade);
+    border: 5px dashed var(--sky-blue);
+    font-size: 2.375em;
+    padding: .29em;
+}
+
+.social_networks__tile + .social_networks__tile{
+   margin-top: .3em;
+}
+
+.social_networks__tile:hover{
+    background-color: var(--powerade) ;
+    color: var(--strong-blue);
+    border-color: var(--strong-blue);
 }
