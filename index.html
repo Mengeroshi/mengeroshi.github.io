@@ -3,15 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/19cebd8c75.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/19cebd8c75.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <title>Portfolio</title>
   </head>
   <body>
@@ -64,12 +59,23 @@
               Hey dude, welcome to my page. There are only two things that I love the most: Learn and teach all I've learned.
             </p>
           </header>
-        </section>
-
+          <!-- Slider main container -->
+          <div class="swiper-container" id="about_me__gallery">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="/images/swiperGallery/Image.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/swiperGallery/Image.png" alt=""></div>
+                <div class="swiper-slide"><img src="/images/swiperGallery/Image.png" alt=""></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </section>
       </main>
       <!-------------------------SOCIAL NETWORK-------------------------------->
-      <aside class="social_networks">
+      <div class="social_networks">
         <a href="#" class="social_networks__tile">
           <i class="fab fa-github"></i>
         </a>
@@ -88,7 +94,9 @@
         <a href="#" class="social_networks__tile">
           <i class="far fa-envelope"></i>
         </a>
-      </aside>
+      </div>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="swiperGallery.js"></script>
   </body>
 </html>
