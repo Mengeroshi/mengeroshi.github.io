@@ -226,6 +226,7 @@ body{
 .about_me{
     display: flex;
     flex-direction: column;
+    margin-bottom: 5rem;
 }
 
 .header{
@@ -287,3 +288,36 @@ body{
 @media (max-width: 35em){#about_me__gallery {width: 80%;}}
 @media (max-width: 20em){#about_me__gallery {width: 95%;}}
 
+/*------------WORK XP--------------------------------------*/
+.work_xp{
+    display: flex;
+    justify-content: center;
+}
+.section_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
+    background-color: var(--powerade);
+    font-size: 1rem;
+    padding: .8rem 0;
+}
+
+.section_title h2{
+    color: var(--blue-demon);
+    font-size: 2.188em;
+}
+.dashed{
+    border:0.313rem dashed var(--blue-demon);
+}
+
+@media(max-width: 35em){
+    .section_title{
+        font-size: .7rem;
+        width: 70%;}
+}
+@media(max-width: 20em){
+    .section_title{width: 100%;
+        font-size: 1rem;
+    }
+}
