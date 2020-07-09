@@ -222,7 +222,7 @@ body{
     }
 }
 
-/*------------HEADER--------------------------------------*/
+/*------------ABOUT ME--------------------------------------*/
 .about_me{
     display: flex;
     flex-direction: column;
@@ -234,7 +234,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: .8rem;
-    margin-top: 2.375em;
+    margin-top: 1em;
 
     text-align: center;
 }
@@ -257,7 +257,10 @@ body{
 }
 
 @media (max-width: 35em){
-    .header{font-size: .7rem;}
+    .header{
+        margin-top: 2.375em;
+        font-size: .7rem;
+    }
     .header__greet{width: 85%;}
 }
 @media (max-width: 20em){
@@ -267,7 +270,7 @@ body{
 
 }
 
-.swiper-container {
+#about_me__gallery {
     margin-top: 1em;
     width: 60%;
 }
@@ -277,5 +280,10 @@ body{
     align-items: center;
     justify-content: center;
 }
-
 .swiper-button-next, .swiper-button-prev{--swiper-navigation-size: 2.5rem; }
+
+@media(max-width: 1500px){#about_me__gallery {width: 50%;}}
+@media(max-width: 1100px){#about_me__gallery{width: 70% ;}}
+@media (max-width: 35em){#about_me__gallery {width: 80%;}}
+@media (max-width: 20em){#about_me__gallery {width: 95%;}}
+
