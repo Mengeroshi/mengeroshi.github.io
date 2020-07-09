@@ -291,7 +291,8 @@ body{
 /*------------WORK XP--------------------------------------*/
 .work_xp{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .section_title{
     display: flex;
@@ -307,17 +308,48 @@ body{
     color: var(--blue-demon);
     font-size: 2.188em;
 }
-.dashed{
-    border:0.313rem dashed var(--blue-demon);
-}
+.dashed{border:0.313rem dashed var(--blue-demon);}
 
 @media(max-width: 35em){
     .section_title{
-        font-size: .7rem;
+        font-size: .65rem;
         width: 70%;}
 }
 @media(max-width: 20em){
     .section_title{width: 100%;
-        font-size: 1rem;
+        font-size: .9rem;
     }
 }
+.work_xp__timeline{
+
+}
+.work_xp__figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    
+}
+.work_xp__image{
+    width: 7.669em;
+    margin-bottom: 0.438em;
+}
+.work_xp__figcaption{
+text-align: center;
+background-color: var(--blue-demon);
+border:0.313rem dashed var(--sky-blue);
+padding: .5rem 2rem;
+font-size: 1.102em;
+}
+.work_xp__figcaption h3{
+    color: var(--sky-blue);
+}
+.work_xp__figcaption p{
+    color: var(--mint);
+}
+.work_xp__figcaption small{
+    font-weight: lighter;
+    color: white;
+}
+
