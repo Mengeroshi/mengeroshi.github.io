@@ -156,7 +156,6 @@ body{
     border: 1px solid red;
     display: flex;
     flex-direction: column;
-    height: 2000px;
 }
 
 @media (max-width: 35em){
@@ -329,12 +328,16 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 1rem;
+    margin-top: 2em;
     
 }
 .work_xp__image{
-    width: 7.669em;
     margin-bottom: 0.438em;
 }
+.domitai{width: 7.669em;}
+.ADO{width:14.148em ;}
+.greenscrapp{width: 5.333em;}
+
 .work_xp__figcaption{
 text-align: center;
 background-color: var(--blue-demon);
@@ -353,3 +356,15 @@ font-size: 1.102em;
     color: white;
 }
 
+.hashger_box{
+    background-color: black;
+    padding:2.6em 1.498em;
+    font-family:'Share Tech Mono', monospace;
+    margin-bottom: 0.438em;
+}
+.hashger_box h3{
+    color: white;
+    font-size: 2.288em;
+    font-weight: lighter;
+    
+}
