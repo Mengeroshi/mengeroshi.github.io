@@ -19,7 +19,7 @@ html{
     font-family: 'Comfortaa', cursive;
     background-color: var(--blue-demon);
 }
-img{width: 100%;}
+img{max-width: 100%;}
 /*------------NAVBAR--------------------------------------*/
 .nav_bar{
     font-size: .8rem;
@@ -294,6 +294,7 @@ body{
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin-bottom: 5rem;
 }
 .work_xp__line{
     position: absolute;
@@ -346,7 +347,7 @@ body{
 }
 .domitai{width: 7.669em;}
 .ADO{width:14.148em ;}
-.greenscrapp{width: 5.333em;}
+.greenscrapp{width: 5em;}
 
 .work_xp__figcaption{
 text-align: center;
@@ -377,4 +378,67 @@ font-size: 1.102em;
     font-size: 2.288em;
     font-weight: lighter;
     
+}
+
+/*------------PORTFOLIO--------------------------------------*/
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 10rem;
+}
+
+.portfolio__skillset{
+    display: flex;
+    flex-direction: column;
+    color: var(--mint);
+    font-size: .8rem;
+    width: 66.9%;
+    margin-top: 2.204em;
+    
+}
+.portfolio__skillset h4{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.skillset__skill p{
+    font-size: 1.763em;
+}
+
+.skillset_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.skillset__skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.skillset__skill + .skillset__skill{
+    margin-left: 2.319em;
+}
+
+.skillset__skill img{
+    text-align: center;
+    width: 5.375em;
+    margin-top: 0.441em;
+    margin-bottom: 0.969em;
+}
+
+
+
+@media (max-width: 35em){
+    .portfolio__skillset{
+        font-size: .5rem;
+    }
+}
+@media (max-width: 20em){
+    .portfolio__skillset{
+        font-size: .6rem;
+    }
 }
