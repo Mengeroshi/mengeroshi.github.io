@@ -430,8 +430,6 @@ font-size: 1.102em;
     margin-bottom: 0.969em;
 }
 
-
-
 @media (max-width: 35em){
     .portfolio__skillset{
         font-size: .5rem;
@@ -441,4 +439,30 @@ font-size: 1.102em;
     .portfolio__skillset{
         font-size: .6rem;
     }
+}
+
+.portfolio__gallery__title{
+    text-align: center;
+    color: var(--powerade);
+    font-size: 2.204em;
+    margin-top: 1.204em;
+}
+
+.portfolio__gallery__grid{
+}
+
+.gallery__grid__figure{
+    position: relative;
+    
+}
+.gallery__grid__caption{
+    position: absolute;
+    bottom: 2px;
+    background-color: var(--powerade);
+    width: 100%;
+    text-align: center;
+    color: var(--blue-demon);
+    font-size: 1.5em;
+    opacity: .9;
+    padding: .5em 0;
 }
