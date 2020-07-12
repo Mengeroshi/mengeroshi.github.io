@@ -440,20 +440,37 @@ font-size: 1.102em;
         font-size: .6rem;
     }
 }
+.portfolio__gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .portfolio__gallery__title{
     text-align: center;
     color: var(--powerade);
     font-size: 2.204em;
     margin-top: 1.204em;
+    margin-bottom: .8em;
 }
 
 .portfolio__gallery__grid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2.292em;
+}
+.gallery__grid__anchor{
+    display: block;
 }
 
 .gallery__grid__figure{
     position: relative;
     
+}
+.gallery__grid__figure img{
+    width: 100%;
 }
 .gallery__grid__caption{
     position: absolute;
@@ -462,7 +479,17 @@ font-size: 1.102em;
     width: 100%;
     text-align: center;
     color: var(--blue-demon);
-    font-size: 1.5em;
+    font-size: 1em;
     opacity: .9;
     padding: .5em 0;
+}
+
+@media(max-width: 35em){
+    .portfolio__gallery__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+    }
+    .gallery__grid__caption{
+        font-size: 1.5em;
+    }
 }
