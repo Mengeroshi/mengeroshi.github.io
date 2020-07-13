@@ -271,7 +271,7 @@ body{
 
 }
 
-#about_me__gallery {
+.swiper-container {
     margin-top: 1em;
     width: 60%;
 }
@@ -386,7 +386,7 @@ font-size: 1.102em;
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .portfolio__skillset{
@@ -492,4 +492,23 @@ font-size: 1.102em;
     .gallery__grid__caption{
         font-size: 1.5em;
     }
+}
+
+/*------------LECTURES--------------------------------------*/
+.lectures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lectures__gallery__figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#lectures__gallery{
+    width: 98%;
+}
+.swiper-pagination{
+    color: var(--mint);
 }
