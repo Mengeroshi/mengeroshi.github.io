@@ -523,3 +523,52 @@ font-size: 1.102em;
 @media(max-width: 35em){
     .lectures__gallery__figure{margin-bottom: 2.2em;}
 }
+
+/*------------CONTACT--------------------------------------*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+.contact__grid{
+    margin-top: 2rem;
+    max-width: 100%;
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 3.22em;
+}
+.contact__grid__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    color:var(--powerade);
+    border: 0.22rem dashed var(--sky-blue);
+    padding: 0.821em;
+}
+
+/*.contact__grid__item + .contact__grid__item{
+    margin-left: 3.22em;
+}
+*/
+
+.contact__grid__item i{
+    font-size: 6.03em;
+    margin-bottom: 0.09em;
+}
+
+.contact__grid__item:last-child small{
+    font-size: 0.5em;
+}
+
+@media(max-width: 35em){
+    .contact__grid{
+        font-size: .6rem;
+    }
+}
