@@ -530,6 +530,7 @@ font-size: 1.102em;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
+    margin-bottom: 2em;
 }
 
 .contact__grid{
@@ -570,5 +571,25 @@ font-size: 1.102em;
 @media(max-width: 35em){
     .contact__grid{
         font-size: .6rem;
+    }
+}
+@media(max-width: 20em){
+    .contact__grid{
+        font-size: .5rem;
+    }
+}
+
+/*------------CONTACT--------------------------------------*/
+footer{
+    color: var(--mint);
+    text-align: center;
+    background-color: var(--strong-blue);
+    padding: .2em 0;
+}
+
+@media(max-width: 20em){
+    footer{
+        padding-top: 1em;
+        padding-bottom: 7em;
     }
 }
