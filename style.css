@@ -50,8 +50,8 @@ img{max-width: 100%;}
     color: var(--powerade);
     text-align: center;
     background-color:inherit;
-    border-right: 5px dashed var(--powerade);
-    border-left: 5px dashed var(--powerade);
+    border-right: .3em dashed var(--powerade);
+    border-left: .3em dashed var(--powerade);
     flex: 1;
 }
 .nav_bar__photo{
@@ -62,18 +62,18 @@ img{max-width: 100%;}
 }
 
 .nav_bar__item + .nav_bar__item{
-    border-top:5px dashed var(--powerade) ;
+    border-top:.3em dashed var(--powerade) ;
 }
-.nav_bar__item:first-child{border-top:5px dashed var(--powerade)}
-.nav_bar__item:last-child{border-bottom:5px dashed var(--powerade)}
+.nav_bar__item:first-child{border-top:.3em dashed var(--powerade)}
+.nav_bar__item:last-child{border-bottom:.3em dashed var(--powerade)}
 .nav_bar__item:hover:not(.nav_bar__photo){
     color: var(--blue-demon);
     background-color: var(--powerade);
-    border-top: 5px dashed var(--blue-demon);
-    border-right: 5px dashed var(--blue-demon);
-    border-left: 5px dashed var(--blue-demon);
+    border-top: .3em dashed var(--blue-demon);
+    border-right: .3em dashed var(--blue-demon);
+    border-left: .3em dashed var(--blue-demon);
 }
-.nav_bar__item:hover:last-child{border-bottom: 5px dashed var(--blue-demon);}
+.nav_bar__item:hover:last-child{border-bottom: .3em dashed var(--blue-demon);}
 
 
 .nav_bar__item a{
@@ -156,7 +156,7 @@ body{
 .main{
     width: 78%;
     background-color: var(--strong-blue);
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: flex;
     flex-direction: column;
 }
@@ -179,8 +179,9 @@ body{
     flex-direction: column;
     width: 6%;
     position: sticky;
+    overflow: hidden;
     top: 0px;
-    border: red solid 1px; 
+    /*border: red solid 1px; */
 }
 .social_networks__tile{
     display: flex;
@@ -228,7 +229,7 @@ body{
 .about_me{
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .header{
@@ -260,16 +261,25 @@ body{
 }
 
 @media (max-width: 45em){
+    .about_me{margin-top: 2.5em;}
     .header{
-        margin-top: 2.375em;
+        margin-top: 1em;
+        margin-bottom: 3em;
         font-size: .7rem;
     }
     .header__greet{width: 85%;}
 }
 @media (max-width: 26em){
-    .header{font-size: .8rem;}
+    .about_me{
+        margin-top: 1em;
+        margin-bottom: 12em;
+    }
+    .header{
+        font-size: .9rem;
+        margin-bottom: 2em;
+    }
     .header__title{font-size: 3em;}
-    .header__greet{ width: 90%;}
+    .header__greet{ width: 95%;}
 
 }
 #about_me__gallery{ overflow: hidden;}
@@ -289,10 +299,10 @@ body{
     --swiper-theme-color: var(--mint)
 }
 
-@media(max-width: 1500px){#about_me__gallery {width: 50%;}}
+@media(max-width: 1500px){#about_me__gallery {width: 55%;}}
 @media(max-width: 1100px){#about_me__gallery{width: 70% ;}}
-@media (max-width: 45em){#about_me__gallery {width: 80%;}}
-@media (max-width: 26em){#about_me__gallery {width: 98%;}}
+@media (max-width: 45em){#about_me__gallery {width: 90%;}}
+@media (max-width: 26em){#about_me__gallery {width: 100%;}}
 
 /*------------WORK XP--------------------------------------*/
 .work_xp{
@@ -300,7 +310,7 @@ body{
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 .work_xp__line{
     position: absolute;
@@ -392,7 +402,7 @@ font-size: 1.102em;
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
 }
 
 .portfolio__skillset{
@@ -505,6 +515,7 @@ font-size: 1.102em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 8rem;
 }
 
 .lectures__gallery__figure{
@@ -514,6 +525,7 @@ font-size: 1.102em;
     margin-bottom: 1.7em;
 }
 #lectures__gallery{
+    margin-top: 4em;
     width: 98%;
     font-size: .9rem;
     overflow: hidden;
@@ -528,18 +540,22 @@ font-size: 1.102em;
 @media(max-width: 45em){
     .lectures__gallery__figure{margin-bottom: 2.2em;}
 }
-
+@media(max-width: 26em){
+    #lectures__gallery{
+        margin-top: 6em;
+    }
+}
 /*------------CONTACT--------------------------------------*/
 .contact{
     display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 3.5em;
 }
 
 .contact__grid{
-    margin-top: 2rem;
+    margin-top: 3rem;
     max-width: 100%;
     font-size: 1rem;
     display: grid;
