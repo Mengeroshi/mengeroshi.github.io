@@ -566,7 +566,7 @@ font-size: 1.102em;
 
 .contact__grid__item i{
     font-size: 6.03em;
-    margin-bottom: 0.09em;
+    margin-bottom: 0.1em;
 }
 
 .contact__grid__item:last-child small{
@@ -580,7 +580,8 @@ font-size: 1.102em;
 }
 @media(max-width: 26em){
     .contact__grid{
-        font-size: .5rem;
+        font-size: .9rem;
+        gap: 1em
     }
 }
 
@@ -595,6 +596,6 @@ footer{
 @media(max-width: 26em){
     footer{
         padding-top: 1em;
-        padding-bottom: 7em;
+        padding-bottom: 8em;
     }
 }
