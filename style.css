@@ -381,6 +381,19 @@ font-size: 1.102em;
     font-weight: lighter;
     color: white;
 }
+.work_xp__figure a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.work_xp__anchor{
+    text-decoration: none;
+    color: inherit;
+}
+.work_xp__anchor:hover{
+    text-decoration: underline;
+}
 
 .hashger_box{
     background-color: black;
