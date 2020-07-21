@@ -606,6 +606,9 @@ font-size: 1.102em;
     border: 0.22rem dashed var(--sky-blue);
     padding: 0.821em;
 }
+.contact__grid__item:hover{
+    box-shadow: 0 5px 15px rgba(29, 208, 248, .7);
+}
 
 /*.contact__grid__item + .contact__grid__item{
     margin-left: 3.22em;
