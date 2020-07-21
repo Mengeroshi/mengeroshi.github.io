@@ -490,7 +490,11 @@ font-size: 1.102em;
     gap: 2.292em;
 }
 .gallery__grid__anchor{
-    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+.gallery__grid__anchor:hover{
+    text-decoration: underline;
 }
 
 .gallery__grid__figure{
@@ -547,6 +551,22 @@ font-size: 1.102em;
 
 .swiper-pagination{
     color: var(--mint);
+}
+
+.figcaption_anchor_img{
+    display: block;
+}
+.figcaption_anchor_img:hover img{
+    box-shadow: 0 5px 15px rgba(29, 208, 248, .7);
+}
+
+.figcaption_anchor{
+    color: inherit;
+    text-decoration: none;
+
+}
+.figcaption_anchor:hover{
+    text-decoration: underline;
 }
 
 @media(max-width: 45em){
