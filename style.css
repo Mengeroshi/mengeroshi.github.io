@@ -18,6 +18,7 @@
 html{
     font-family: 'Comfortaa', cursive;
     background-color: var(--blue-demon);
+    scroll-behavior: smooth;
 }
 img{max-width: 100%;}
 /*------------NAVBAR--------------------------------------*/
@@ -103,8 +104,6 @@ font-size: 0.9em;
     }
     .nav_bar__photo{
         flex:2%;
-    }
-    .nav_bar__item{
     }
 }
 @media (max-width: 26em){
